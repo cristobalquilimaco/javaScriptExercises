@@ -32,3 +32,9 @@ console.log(`el valor total de tu compra es de ${totalCompra}€`);
 // AREA = 1600
 // PERIMETRO 160
 
+const side = 40
+const area = side * side
+const perimetro = side * 4
+
+console.log(`El valor del area es de:${area}`);
+console.log(`el valor del perimetro es de: ${perimetro}`);
