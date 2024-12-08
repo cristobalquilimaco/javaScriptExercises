@@ -12,4 +12,8 @@ const compra = 200
 const iva = 21
 
 const totalCompra = compra + iva * 200 / 100 
-console.log(`el valor total de tu compra es de ${totalCompra}`);
+console.log(`el valor total de tu compra es de ${totalCompra}€`);
+
+// El valor colocado por consola es de 242€
+// para correr el codigo en consola puede colocar node exercise1.js
+// node el nombre de tur archivo y dale enter
