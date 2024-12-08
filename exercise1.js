@@ -12,3 +12,4 @@ const compra = 200
 const iva = 21
 
 const totalCompra = compra + iva * 200 / 100 
+console.log(`el valor total de tu compra es de ${totalCompra}`);
