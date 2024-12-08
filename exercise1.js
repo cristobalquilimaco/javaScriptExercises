@@ -8,6 +8,7 @@
 
 //El total son 242 €.  //200 + 21*200/100
 
-const precio = 200
+const compra = 200
 const iva = 21
 
+const totalCompra = compra + iva * 200 / 100 
