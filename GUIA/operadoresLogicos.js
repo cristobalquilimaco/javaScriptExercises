@@ -6,3 +6,6 @@
 // retornar True si ambas expsiones son verdaderas
 
 
+let a = true
+let b = false
+console.log(a && b)
