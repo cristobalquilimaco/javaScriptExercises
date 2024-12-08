@@ -14,6 +14,7 @@
 // Ejemplo: Suma de los multiplos de 3 y 5 menores a 1000 : 
 
 // Variable para almacenar la suma 
+
 let suma = 0
 // bucle para recorrer los numeros del 1 al 999
 for(let i = 1; i < 1000; i ++){
