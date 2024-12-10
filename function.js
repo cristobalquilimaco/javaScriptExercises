@@ -12,25 +12,47 @@
 
 
 // Funcion para calcular el area
-function calcularArea(alto, ancho){
+// function calcularArea(alto, ancho){
+//     return alto * ancho
+// }
+
+// function calcularPerimetro(alto, ancho){
+//     return 2 *(alto + ancho)
+// }
+
+// function obtenerDimensiones(){
+//     // Aqui se definen las dimensiones del rectangulo de forma estatica
+//     let ancho = 5;
+//     let alto = 10;
+
+//     //calcular el área y el perimetro usando las funciones
+//     let area = calcularArea(ancho, alto)
+//     let perimetro = calcularPerimetro(ancho, alto)
+
+//     console.log("el area del rectangulo es: ", area);
+//     console.log("el area del perimetro es: ", perimetro);
+// }
+
+obtenerDimensiones()
+
+function calcularArea(ancho, alto){
     return alto * ancho
 }
 
 function calcularPerimetro(alto, ancho){
-    return 2 *(alto + ancho)
+    return 2 * (ancho + alto)
 }
 
 function obtenerDimensiones(){
-    // Aqui se definen las dimensiones del rectangulo de forma estatica
     let ancho = 5;
-    let alto = 10;
+    let alto = 10
 
-    //calcular el área y el perimetro usando las funciones
-    let area = calcularArea(ancho, alto)
-    let perimetro = calcularPerimetro(ancho, alto)
+    let area = calcularArea(alto, ancho);
+    let perimetro = calcularPerimetro(alto, ancho);
 
-    console.log("el area del rectangulo es: ", area);
-    console.log("el area del perimetro es: ", perimetro);
+    console.log(`El area del rectangulo es: ${area}`);
+    console.log(`El area del perimetro es: ${alto}`);
+    
+    
+
 }
-
-obtenerDimensiones()
