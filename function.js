@@ -24,7 +24,14 @@ function calcularPerimetro(ancho, alto){
 //Funcion principal
 function obtenerDimensiones(){
     //Pedir dimensiones del rectangulo
+    // Se agrega funcion parseFloat() para analizar el argumento, y si es necesario devolver un numero flotante
     let ancho = parseFloat(prompt("Introduce el ancho del rectangulo"))
     let alto = parseFloat(prompt("Introduce el alto del rectangulo"))
 
 }
+// En esta area se llaman a las funciones para mostrar los resultados
+let area = calcularArea(ancho, alto)
+let perimetro = calcularPerimetro(ancho, alto)
+
+// mostrar Resultados
+
