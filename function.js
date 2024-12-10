@@ -36,3 +36,5 @@ let perimetro = calcularPerimetro(ancho, alto)
 // mostrar Resultados
 alert("El area del rectangulo es: " + area)
 alert("El perimetro del rectangulo es: " + perimetro)
+
+obtenerDimensiones();
