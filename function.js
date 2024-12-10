@@ -25,5 +25,6 @@ function calcularPerimetro(ancho, alto){
 function obtenerDimensiones(){
     //Pedir dimensiones del rectangulo
     let ancho = parseFloat(prompt("Introduce el ancho del rectangulo"))
+    let alto = parseFloat(prompt("Introduce el alto del rectangulo"))
 
 }
