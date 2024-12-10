@@ -12,29 +12,25 @@
 
 
 // Funcion para calcular el area
-function calcularArea(ancho , alto){
-    return ancho * alto;
+function calcularArea(alto, ancho){
+    return alto * ancho
 }
 
-//Funcion para calcular el perimetro
-function calcularPerimetro(ancho, alto){
-    return 2 * (ancho + alto);
+function calcularPerimetro(alto, ancho){
+    return 2 *(alto + ancho)
 }
 
-//Funcion principal
 function obtenerDimensiones(){
-    //Pedir dimensiones del rectangulo
-    // Se agrega funcion parseFloat() para analizar el argumento, y si es necesario devolver un numero flotante
-    let ancho = parseFloat(prompt("Introduce el ancho del rectangulo"))
-    let alto = parseFloat(prompt("Introduce el alto del rectangulo"))
+    // Aqui se definen las dimensiones del rectangulo de forma estatica
+    let ancho = 5;
+    let alto = 10;
 
+    //calcular el área y el perimetro usando las funciones
+    let area = calcularArea(ancho, alto)
+    let perimetro = calcularPerimetro(ancho, alto)
+
+    console.log("el area del rectangulo es: ", area);
+    console.log("el area del perimetro es: ", perimetro);
 }
-// En esta area se llaman a las funciones para mostrar los resultados
-let area = calcularArea(ancho, alto)
-let perimetro = calcularPerimetro(ancho, alto)
 
-// mostrar Resultados
-alert("El area del rectangulo es: " + area)
-alert("El perimetro del rectangulo es: " + perimetro)
-
-obtenerDimensiones();
+obtenerDimensiones()
