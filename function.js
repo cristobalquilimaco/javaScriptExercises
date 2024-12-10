@@ -11,6 +11,19 @@
 // Llama a ambas funciones y muestra los resultados en la consola o en un alert().
 
 
+// Funcion para calcular el area
 function calcularArea(ancho , alto){
-    
+    return ancho * alto;
+}
+
+//Funcion para calcular el perimetro
+function calcularPerimetro(ancho, alto){
+    return 2 * (ancho + alto);
+}
+
+//Funcion principal
+function obtenerDimensiones(){
+    //Pedir dimensiones del rectangulo
+    let ancho = parseFloat(prompt("Introduce el ancho del rectangulo"))
+
 }
