@@ -23,7 +23,39 @@
 
 
 
-function validateAge(edad){
-    return edad >= 18;
+const user = {
+    age: 20,
+    email: 'juan@example.com',
+    consent: false,
+  };
+  
+  const user2 = {
+    age: 15,
+    email: 'ana@example.com',
+    consent: true,
+  };
+
+//Funcion para validar si el usuario es mayo de 18 años
+function validateAge(age){
+    return age >= 18;
 }
 
+//Funcion para validar si el correo esta escrito corretamente
+function validateEmail(email){
+    return email.includes("@") && email.includes(".")
+}
+
+//Funcion para hacer la reservacion
+function makeAReservation(user){
+    //condicion para validar si el correo es valido 
+    if(!validateEmail(user.email)){
+        return "The email has been sucessfully validate"
+    }
+    if(validateAge(user.age)){
+        return "The user is of the correct age to make a reservation"
+    }
+    if(user.consent){
+        return "Does it have adult consent?"
+    }
+    return "The user cannot make the reservation"
+}
