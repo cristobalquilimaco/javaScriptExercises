@@ -59,3 +59,7 @@ function makeAReservation(user){
     }
     return "The user cannot make the reservation"
 }
+
+console.log(makeAReservation(user));
+console.log(makeAReservation(user2));
+
