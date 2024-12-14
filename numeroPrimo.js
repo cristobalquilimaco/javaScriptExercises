@@ -22,3 +22,7 @@ function primeNumber(){
     }
     return true
 }
+
+console.log(primeNumber(7));
+console.log(primeNumber(2));
+console.log(primeNumber(5));
