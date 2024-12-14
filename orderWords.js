@@ -9,3 +9,7 @@ function orderWords(word){
     return word.sort();
 }
 
+function showResults(){
+    const orderWords = orderWords(palabras)
+    console.log("Palabras ordenadas alfabéticamente: ", orderWords);
+}
