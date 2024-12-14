@@ -20,3 +20,15 @@ function showResults(words){
 const wordList = ["manzana", "naranja", "pera", "platano", "uva"]
 showResults(wordList)
 
+
+
+
+
+
+
+//Metodos aprendidos.
+
+//  .sort()
+//Este metodo ordena los elementos de un arreglo localmente y devuelve el arreglo ordenado
+//La ordenacion no es necesariamente estable
+// El modo de ordenación por defecto responde a la posicion del valor del string de acuerdo a su valor unicode
