@@ -10,3 +10,8 @@
 // Si el número es menor o igual a 1, no es primo.
 // Puedes optimizar el código evitando comprobar los divisores hasta la raíz cuadrada del número.
 
+function primeNumber(){
+    if(num <= 1){
+        
+    }
+}
