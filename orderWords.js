@@ -5,13 +5,13 @@
 // 2 - Crea otra función llamada "showResults" que imprima el arreglo ordenado en consola
 // 3 - La funcion ordenar "orderWords" debe ordenar las palabras usando algún algoritmo de ordenamiento (por ejemplo el metodo sort de javascript)
 
-function orderWords(word){
-    return word.sort();
+function orderWords(words){
+    return words.sort();
 }
 
-function showResults(){
-    const orderWords = orderWords(palabras)
-    console.log("Palabras ordenadas alfabéticamente: ", orderWords);
+function showResults(words){
+    const orderWordsFinal = orderWords(words)
+    console.log("Palabras ordenadas alfabéticamente: ", orderWordsFinal);
 }
 
 const wordList = ["manzana", "naranja", "pera", "platano", "uva"]
