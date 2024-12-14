@@ -10,7 +10,7 @@
 // Si el número es menor o igual a 1, no es primo.
 // Puedes optimizar el código evitando comprobar los divisores hasta la raíz cuadrada del número.
 
-function primeNumber(){
+function primeNumber(num){
     if(num <= 1){
         return false
     }
@@ -24,5 +24,5 @@ function primeNumber(){
 }
 
 console.log(primeNumber(7));
-console.log(primeNumber(2));
+console.log(primeNumber(10));
 console.log(primeNumber(5));
