@@ -13,3 +13,6 @@ function showResults(){
     const orderWords = orderWords(palabras)
     console.log("Palabras ordenadas alfabéticamente: ", orderWords);
 }
+
+const wordList = ["manzana", "naranja", "pera", "platano", "uva"]
+showResults(wordList)
