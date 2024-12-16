@@ -34,3 +34,5 @@ if(!resultado[longitud]){
 }
 return resultado
 }
+
+console.log(agruparPoLongitud(palabras));
