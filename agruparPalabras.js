@@ -13,6 +13,15 @@
 const palabras = ["casa", "sol", "montaña", "luz", "lago", "mar", "espejo"];
 
 function agruparPoLongitud(palabras){
+    // validacion si el arreglo esta vacio
     if(palabras.length === 0)
         return{}
+}
+
+//Objeto para almacenar las palabras segun su longitud
+const resultado = {}
+
+// Recorre el array con las palabras
+for(let palabras of palabras){
+    const longitud = palabras.length; // Aqui se obtiene la longitud de la palabras
 }
