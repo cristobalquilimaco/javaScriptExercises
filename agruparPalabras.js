@@ -11,3 +11,8 @@
 // Si esta vacio la funcion debe retornar un array vacio ({})
 
 const palabras = ["casa", "sol", "montaña", "luz", "lago", "mar", "espejo"];
+
+function agruparPoLongitud(palabras){
+    if(palabras.length === 0)
+        return{}
+}
