@@ -16,7 +16,7 @@ function agruparPoLongitud(palabras){
     // validacion si el arreglo esta vacio
     if(palabras.length === 0)
         return{}
-}
+
 
 //Objeto para almacenar las palabras segun su longitud
 const resultado = {}
@@ -24,9 +24,13 @@ const resultado = {}
 // Recorre el array con las palabras
 for(let palabras of palabras){
     const longitud = palabras.length; // Aqui se obtiene la longitud de la palabras
-}
 
-//Se valida si no existe una clave para esa longitud, si no existe la crea
+    //Se valida si no existe una clave para esa longitud, si no existe la crea
 if(!resultado[longitud]){
     resultado[longitud] = []
+}
+// Agrega la palabra al array que corresponde
+    resultado[longitud].push(palabra);
+}
+return resultado
 }
