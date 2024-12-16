@@ -25,3 +25,8 @@ const resultado = {}
 for(let palabras of palabras){
     const longitud = palabras.length; // Aqui se obtiene la longitud de la palabras
 }
+
+//Se valida si no existe una clave para esa longitud, si no existe la crea
+if(!resultado[longitud]){
+    resultado[longitud] = []
+}
