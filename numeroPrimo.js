@@ -25,5 +25,5 @@ function primeNumber(num){
 
 console.log(primeNumber(7));
 console.log(primeNumber(0));
-console.log(primeNumber(5));
+console.log(primeNumber(0));
 
