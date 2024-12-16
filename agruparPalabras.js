@@ -22,7 +22,7 @@ function agruparPoLongitud(palabras){
 const resultado = {}
 
 // Recorre el array con las palabras
-for(let palabras of palabras){
+for(let palabra of palabras){
     const longitud = palabras.length; // Aqui se obtiene la longitud de la palabras
 
     //Se valida si no existe una clave para esa longitud, si no existe la crea
@@ -36,3 +36,20 @@ return resultado
 }
 
 console.log(agruparPoLongitud(palabras));
+
+// Resultado por consola
+// // {
+// //     '7': [
+// //       'casa',    'sol',
+// //       'montaña', 'luz',
+// //       'lago',    'mar',
+// //       'espejo'
+// //     ]
+// //   }
+
+// Metodos utilizados
+
+// .length() -- la propiedad length de un objeto "string" respresenta la longitud de una cadena, en unidades de codigo UTF-16
+// esta propieda devielve el numero de caracteres de una cadena
+
+// .push() -- Este metodo añade uno o mas elementos al final de un Array y devuelve la nueva longitud del array
