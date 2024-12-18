@@ -1,18 +1,15 @@
 function fizzBuzz(){
-    let resultado = []
-
-    for(let i = 1; i <= n; i++){
+    for(let i = 1; i <= 100; i++){
         let resultadoFizzBuzz = "";
-        if( i % 3 === 0){
-            return "Fizz"
+        if( i % 3 === 0) resultadoFizzBuzz += "fizz"
+        if( i % 5 === 0) resultadoFizzBuzz += "buzz"
+        else{
+            "fizBuzz"
         }
-        if(i % 5 === 0){
-            return "Buzz"
-        }
-        resultado.push(resultadoFizzBuzz || i)
+        console.log((resultadoFizzBuzz || i))
         
     }
-    return resultado
 }
 
-console.log(15);
+fizzBuzz()
+
