@@ -6,6 +6,13 @@ function fizzBuzz(){
         if( i % 3 === 0){
             return "Fizz"
         }
-        if(i % 5)   
+        if(i % 5 === 0){
+            return "Buzz"
+        }
+        resultado.push(resultadoFizzBuzz || i)
+        
     }
+    return resultado
 }
+
+console.log(15);
