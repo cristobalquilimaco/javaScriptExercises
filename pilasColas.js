@@ -76,6 +76,14 @@ class Cola{
         }
     return this.items.shift(); //El emtodo shift nos ayuda a tener ese resultado eliminando el primer elemento
     }
-    
+    //Obtener el primer elemento sin eliminarlo
+    // Para no eliminarlo tienes que solo acceder al elemento que se esta pidiendo
+    front(){
+        if(this.isEmpty){
+            console.log("La cola esta vacia")
+        return;
+        }
+        return this.items[0]
+    }
 
 }
