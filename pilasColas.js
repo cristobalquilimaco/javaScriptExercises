@@ -59,13 +59,13 @@
 
 
 class Cola{
-    builder(){
+    constructor(){
         this.items = [];
     }
 
     //Vamos a agregar elementos a la cola
-    dequeue(elemento){
-        this.items.push(elemento)
+    enqueue(elemento){
+        this.items.push(elemento);
     }
 
     //eliminar y devolver el primer elemento de la cola
@@ -85,5 +85,32 @@ class Cola{
         }
         return this.items[0]
     }
+    //verificar si la cola esta vacia
+    // como se verifica si la cola esta vacia. se debe acceder a todo el arreglo y validar si hay datos dentro de ella y retornar el valor
+    isEmpty(){
+        return this.items.length === 0;
+    }
 
-}
+    //Obtener el tamaño de cola
+    //¿Como obtener el tamaño de la cola?
+    // si para validar si la cola esta vacia, primero accedimos al largo de la cola y luego lo comparamos con 0
+    // En este caso para devolver el tamaño solo accedemos al largo de la lista sin compararlo con nada
+    size(){
+        return this.items.length
+    }
+    
+    //Vaciar la cola
+    clear(){
+        return this.items = []
+    }
+
+}   
+
+
+let cola = new Cola();
+cola.enqueue(10);
+cola.enqueue(20);
+cola.enqueue(30);
+console.log(cola.dequeue()); // 10
+console.log(cola.front());   // 20
+console.log(cola.size());    // 2
