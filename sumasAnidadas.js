@@ -6,3 +6,19 @@
 // La función debe manejar matrices anidadas de manera recursiva.
 // La entrada puede contener tanto números como arrays dentro de otros arrays.
 
+const arr = [1, [2,3], [4, [5,6]], 7]
+
+function sumaNesteArray(arr){
+    let suma = 0 //Inicializamos la variable donde vamos a agregar la suma en 0
+
+    for(let element of arr){
+        if(Array.isArray(element)){
+            suma += sumaNesteArray(element)
+        }else if(typeof element === "number"){
+            suma += element 
+        }
+        
+    }
+    return suma
+}
+console.log(sumaNesteArray(arr))
