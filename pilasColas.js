@@ -59,7 +59,7 @@
 
 
 class Cola{
-    constructor(){
+    constructor(){ //Palabra reservada Constructor
         this.items = [];
     }
 
