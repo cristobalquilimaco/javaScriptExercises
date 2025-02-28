@@ -12,5 +12,9 @@ const productos = [
     { nombre: 'Producto A', precio: 30, cantidad: 5 },
     { nombre: 'Producto B', precio: 20, cantidad: 3 },
     { nombre: 'Producto C', precio: 10, cantidad: 7 }
-  ];
-  
+];
+
+//En este caso se debe crear una funcion para calcular el valor
+function calcularTotalInventario(){
+
+}
