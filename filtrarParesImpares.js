@@ -24,4 +24,20 @@ numbers = [1,2,3,4,5,6,7,8,9]
 // const filter = filtrarParesImpares(numbers);
 // console.log(filter);
 
+function filtrarParesImpares(numbers){
+    let pares = []
+    let impares = []
 
+    for (const num of numbers){
+        if (num % 2 === 0){
+            pares.push(num)
+        }else{
+            impares.push(num)
+        }
+    }
+    return {pares, impares}
+
+}
+
+filter = filtrarParesImpares(numbers)
+console.log(filter);
