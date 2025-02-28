@@ -15,6 +15,14 @@ const productos = [
 ];
 
 //En este caso se debe crear una funcion para calcular el valor
-function calcularTotalInventario(){
-
+function calcularTotalInventario(productosEnTienda){
+    const totalPrecio = productosEnTienda.reduce((suma, producto) =>{
+        return suma + producto.precio * producto.cantidad
+    }, 0)
+    return totalPrecio
 }
+
+const total = calcularTotalInventario(productos);
+console.log(total);
+
+// En este ejercicio utilizamos el metodo .reduce() (funcion de orden superior) que permite iterar sobre los elementos de un array y acumular un unico valor a partir de ellos
