@@ -9,3 +9,8 @@
 // La salida debe ser un array de arrays, donde cada subarray contiene un par de primos gemelos.
 
 
+function findTwinPrimes(n){
+    let primes = []
+
+}
+
