@@ -18,6 +18,23 @@ function isPrimes(num){
     return true
 }
 
-let num = isPrimes(5)
+function findPrimes(n){
+    let primes = []
+    for(let i = 2; i <= n; i++){
+        if(isPrimes(i)){
+            primes.push(i)
+        }
+    }
+    return primes
+}
+
+function findTwinCousins(){
+    
+}
+
+
+let num = findPrimes(50)
+
+
 
 console.log(num)
