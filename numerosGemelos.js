@@ -10,7 +10,7 @@
 
 
 function findTwinPrimes(n){
-    let primes = []
-
+    if(num < 2) return false
 }
 
+findTwinPrimes(20)
