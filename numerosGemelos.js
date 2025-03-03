@@ -28,12 +28,21 @@ function findPrimes(n){
     return primes
 }
 
-function findTwinCousins(){
-    
+function findTwinCousins(n){
+    let primes = findPrimes(n);
+    let twinCousins = []
+
+    for (let i = 2; i < primes.length; i++) {
+        if(primes[i + 1] - primes[i] === 2){
+            twinCousins.push([primes[i], primes[i + 1]])
+        }
+        
+    }
+    return twinCousins
 }
 
 
-let num = findPrimes(50)
+let num = findTwinCousins(50)
 
 
 
