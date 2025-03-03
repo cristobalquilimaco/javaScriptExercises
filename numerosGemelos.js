@@ -9,8 +9,15 @@
 // La salida debe ser un array de arrays, donde cada subarray contiene un par de primos gemelos.
 
 
-function findTwinPrimes(n){
-    if(num < 2) return false
+function isPrimes(num){
+    if(num < 2) return false 
+    //Aplicamos Math.sqrt() para validar raiz cuadrada de num
+    for(let i = 2; i <= Math.sqrt(num); i++){
+        if(num % i === 0)return false;
+    }
+    return true
 }
 
-findTwinPrimes(20)
+let num = isPrimes(5)
+
+console.log(num)
